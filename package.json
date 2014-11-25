@@ -1,0 +1,41 @@
+{
+  "name": "koa-unique-manifest",
+  "version": "1.0.0",
+  "description": "make manifest file unique for per request, only use for developing.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "readall": "0.0.4",
+    "uid-safe": "1"
+  },
+  "devDependencies": {
+    "istanbul-harmony": "*",
+    "koa": "*",
+    "koa-static": "*",
+    "mocha": "*",
+    "supertest": "*"
+  },
+  "scripts": {
+    "test": "mocha --harmony -R spec -t 500 test/*.js",
+    "test-cov": "node --harmony node_modules/.bin/istanbul cover node_modules/.bin/_mocha -- -R dot -t 500 test/*.js",
+    "test-travis": "node --harmony node_modules/.bin/istanbul cover node_modules/.bin/_mocha --report lcovonly -- -R dot -t 500 test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/coderhaoxin/koa-unique-manifest.git"
+  },
+  "keywords": [
+    "manifest",
+    "develop",
+    "uqique",
+    "change"
+  ],
+  "author": "haoxin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/coderhaoxin/koa-unique-manifest/issues"
+  },
+  "homepage": "https://github.com/coderhaoxin/koa-unique-manifest"
+}

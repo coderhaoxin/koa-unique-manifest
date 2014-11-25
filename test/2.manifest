@@ -1,0 +1,7 @@
+CACHE MANIFEST
+
+#CACHE:
+http://cdn.com/app.js
+
+NETWORK:
+*

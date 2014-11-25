@@ -1,0 +1,9 @@
+CACHE MANIFEST
+
+# VERSION: 123456
+
+CACHE:
+http://cdn.com/app.js
+
+NETWORK:
+*
