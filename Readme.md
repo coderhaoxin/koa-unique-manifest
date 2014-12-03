@@ -5,14 +5,16 @@
 [![Dependency status][david-img]][david-url]
 
 ### koa-unique-manifest
-make manifest file unique for per request, only use for developing.
+make manifest file unique for per (count) requests, only for developing.
 
 ```js
 var uniqueManifest = require('koa-unique-manifest'),
   koa = require('koa'),
   app = koa();
 
-app.use(uniqueManifest());
+var count = 10; // default is: 4
+
+app.use(uniqueManifest(count));
 ```
 
 ### License
